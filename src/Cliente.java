@@ -9,14 +9,16 @@ public class Cliente {
     String telefono;
     String correo;
     String contraseña;
+    Compra historial;
     Cliente sig;
     
-    public Cliente(String nombre, String direccion, String telefono, String correo,String contraseña) {
+    public Cliente(String nombre, String direccion, String telefono, String correo,String contraseña, Compra historial) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
         this.correo = correo;
         this.contraseña = contraseña;
+        this.historial = historial;
         sig =null;
     }  
     
@@ -59,6 +61,15 @@ public class Cliente {
     public void setContraseña(String contraseña) {
         this.contraseña = contraseña;
     }
+    
+      public Compra getHistorial() {
+        return historial;
+    }
+
+    public void setHistorial(Compra historial) {
+        this.historial = historial;
+    }
+    
     
     public Cliente getSig() {
         return sig;
