@@ -1,5 +1,5 @@
 
-import frmPrincipal.Login;
+import Vista.frmInicio;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -9,10 +9,10 @@ import frmPrincipal.Login;
 public class Home {
 
     public static void main(String[] args) {
-        Login LoginFrame = new Login();
-               LoginFrame.setVisible(true);
-               LoginFrame.pack();
-               LoginFrame.setLocationRelativeTo(null);
+        frmInicio frmInicioFrame = new frmInicio();
+               frmInicioFrame.setVisible(true);
+               frmInicioFrame.pack();
+               frmInicioFrame.setLocationRelativeTo(null);
     }
     
 }

@@ -8,7 +8,7 @@
  * @author ASUS
  */
 public class Televisor {
-    String nombreTv;
+    int id;
     String marca;
     String diseño;
     int precio;
@@ -17,8 +17,8 @@ public class Televisor {
     int puertosHDMI;
     Televisor sig;
     
-    public Televisor(String nombreTv, String marca, String diseño, int precio, int tamaño, int resolucion, int puertosHDMI) {
-        this.nombreTv = nombreTv;
+    public Televisor(int id, String marca, String diseño, int precio, int tamaño, int resolucion, int puertosHDMI) {
+        this.id = id;
         this.marca = marca;
         this.diseño = diseño;
         this.precio = precio;
@@ -26,12 +26,12 @@ public class Televisor {
         sig =null;
     }  
     
-     public String getNombreTv() {
-        return nombreTv;
+     public int getId() {
+        return id;
     }
 
-    public void setNombreTv(String nombreTv) {
-        this.nombreTv = nombreTv;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getMarca() {
